@@ -11,17 +11,27 @@
 
     <!-- Navbar -->
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">YourLogo</div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+        <div class="logo" href="#">Logo</div>
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+        </div>
+  
+        </div>
+        <div id="hamcontainer">
+            <div class="hamburger" id="hamburger" onclick="openNav()">
+                &#9776; <!-- Hamburger icon -->
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
