@@ -21,7 +21,7 @@ window.addEventListener('scroll', function() {
     var position = element.getBoundingClientRect().top;
     var windowHeight = this.window.innerHeight;
 
-    if (position < windowHeight - 200 && position > 0) {
+    if (position < windowHeight - 200 && position > windowHeight - 600) {
         element.classList.add('show');
     } else {
         element.classList.remove('show');
