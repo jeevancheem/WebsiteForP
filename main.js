@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
     var position = element.getBoundingClientRect().top;
     var windowHeight = this.window.innerHeight;
 
-    if (position < windowHeight - 200 && position > windowHeight - 600) {
+    if (position < windowHeight && position > -windowHeight*0.175) {
         element.classList.add('show');
         backingOverlay.classList.add('show')
     } else {
@@ -30,3 +30,4 @@ window.addEventListener('scroll', function() {
         backingOverlay.classList.remove('show')
     }
 });
+

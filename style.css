@@ -81,6 +81,17 @@ header {
 
 }
 
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+      font-size: 1.5rem;
+      transform: translateX(-50%); /* Don't push it too far off-screen */
+    }
+  }
+
+
+
 .hero-section h1 {
     font-size: 3rem;
 }
