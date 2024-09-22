@@ -18,12 +18,15 @@ function closeNav() {
 
 window.addEventListener('scroll', function() {
     var element = this.document.getElementById('hero-content');
+    var backingOverlay = this.document.querySelector('.backing')
     var position = element.getBoundingClientRect().top;
     var windowHeight = this.window.innerHeight;
 
     if (position < windowHeight - 200 && position > windowHeight - 600) {
         element.classList.add('show');
+        backingOverlay.classList.add('show')
     } else {
         element.classList.remove('show');
+        backingOverlay.classList.remove('show')
     }
 });
