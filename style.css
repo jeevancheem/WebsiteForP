@@ -86,7 +86,9 @@ header {
 @media (max-width: 768px) {
     .hero-content {
       font-size: 1.5rem;
-      transform: translateX(-50%); /* Don't push it too far off-screen */
+      transform: translateX(-50%);
+      max-width: 100vh;
+      display: inline-block; /* Don't push it too far off-screen */
     }
   }
 
@@ -266,8 +268,8 @@ header {
   /* Position the close button (top right corner) */
   .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: -3.8%;
+    right: 2.1%;
     font-size: 60px;
   }
   
