@@ -7,29 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-// function openNav() {
-//     document.getElementById("myNav").style.width = "100%";
-
-// }
-
-// function closeNav() {
-//     document.getElementById("myNav").style.width = "0%";
-// }
-
-window.addEventListener('scroll', function() {
-    var element = this.document.getElementById('hero-content');
-    var backingOverlay = this.document.querySelector('.backing')
-    var position = element.getBoundingClientRect().top;
-    var windowHeight = this.window.innerHeight;
-
-    if (position < windowHeight && position > -windowHeight*0.175) {
-        element.classList.add('show');
-        backingOverlay.classList.add('show')
-    } else {
-        element.classList.remove('show');
-        backingOverlay.classList.remove('show')
-    }
-});
 
 // add classes for mobile navigation toggling
 var CSbody = document.querySelector("body");
@@ -80,3 +57,24 @@ const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropd
     }
                             
 
+const toggle = document.getElementById('toggle');
+const lines = document.querySelectorAll('.cs-line'); // Select all elements with the class 'cs-line'
+    
+toggle.addEventListener('mouseover', () => {
+    toggle.style.backgroundColor = '#FFFFFF'; // Change background color of the button
+    
+    // Change the background color of each line
+    lines.forEach(line => {
+        line.style.backgroundColor = '#000000'; // Change color of each line
+    });
+});
+    
+toggle.addEventListener('mouseout', () => {
+    toggle.style.backgroundColor = ''; // Revert to original button color
+    
+    // Revert the background color of each line
+    lines.forEach(line => {
+        line.style.backgroundColor = ''; // Revert to original line color
+    });
+});
+    
