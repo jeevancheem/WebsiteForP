@@ -57,24 +57,54 @@ const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropd
     }
                             
 
+// const toggle = document.getElementById('toggle');
+// const lines = document.querySelectorAll('.cs-line'); // Select all elements with the class 'cs-line'
+    
+// toggle.addEventListener('mouseover', () => {
+//     toggle.style.backgroundColor = '#FFFFFF'; // Change background color of the button
+    
+//     // Change the background color of each line
+//     lines.forEach(line => {
+//         line.style.backgroundColor = '#000000'; // Change color of each line
+//     });
+// });
+    
+// toggle.addEventListener('mouseout', () => {
+//     toggle.style.backgroundColor = ''; // Revert to original button color
+    
+//     // Revert the background color of each line
+//     lines.forEach(line => {
+//         line.style.backgroundColor = ''; // Revert to original line color
+//     });
+// });
+    
 const toggle = document.getElementById('toggle');
 const lines = document.querySelectorAll('.cs-line'); // Select all elements with the class 'cs-line'
-    
-toggle.addEventListener('mouseover', () => {
-    toggle.style.backgroundColor = '#FFFFFF'; // Change background color of the button
-    
-    // Change the background color of each line
+
+// Function to change colors
+const changeColors = () => {
+    toggle.style.backgroundColor = '#FFFFFF'; // Change button background color
     lines.forEach(line => {
-        line.style.backgroundColor = '#000000'; // Change color of each line
+        line.style.backgroundColor = '#000000'; // Change line colors
     });
-});
-    
-toggle.addEventListener('mouseout', () => {
-    toggle.style.backgroundColor = ''; // Revert to original button color
-    
-    // Revert the background color of each line
+};
+
+// Function to revert colors
+const revertColors = () => {
+    toggle.style.backgroundColor = ''; // Revert button background color
     lines.forEach(line => {
-        line.style.backgroundColor = ''; // Revert to original line color
+        line.style.backgroundColor = ''; // Revert line colors
     });
+};
+
+// Add mouse events for desktop
+toggle.addEventListener('mouseover', changeColors);
+toggle.addEventListener('mouseout', revertColors);
+
+const revertTimeout = 100; // 100 milliseconds
+
+toggle.addEventListener('touchstart', changeColors);
+toggle.addEventListener('touchend', () => {
+    setTimeout(revertColors, revertTimeout); // Delay reverting colors
 });
-    
+
