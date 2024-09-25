@@ -876,7 +876,7 @@ body {
     color: black; /* Change text color */
     cursor: pointer; /* Indicate it's interactive */
   }
-}
+} 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #why-choose-289 .cs-container {

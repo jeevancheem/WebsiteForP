@@ -109,10 +109,9 @@ toggle.addEventListener('touchend', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Define the screen size limit for when the scroll effect should apply (adjust the width if needed)
-    const isSmallScreen = window.matchMedia("(max-width: 768px)").matches; // Change 768px if needed
+    // Define the screen size limit for when the scroll effect should apply
+    const isSmallScreen = window.matchMedia("(max-width: 768px)").matches; // Adjust 768px as needed
 
-    // Only activate the Intersection Observer if it's a small screen
     if (isSmallScreen) {
         // Select all the boxes (cs-items)
         const boxes = document.querySelectorAll("#why-choose-289 .cs-item");
@@ -123,16 +122,24 @@ document.addEventListener("DOMContentLoaded", function () {
             boxes.forEach(box => box.classList.remove("in-view"));
 
             entries.forEach(entry => {
-                // Check if the box is intersecting with the center of the screen
-                if (entry.isIntersecting) {
-                    // Only add 'in-view' class if the center of the viewport is touching the box
-                    const rect = entry.boundingClientRect; // Get the box's position
+                // Get the center coordinates of the screen
+                const centerX = window.innerWidth / 2;
+                const centerY = window.innerHeight / 2;
 
-                    // Check if the center of the screen is within the box's bounds
-                    const screenCenter = window.innerHeight / 2; // Calculate the center of the viewport
-                    if (rect.top < screenCenter && rect.bottom > screenCenter) {
-                        entry.target.classList.add("in-view");
-                    }
+                // Get the position and dimensions of the intersecting box
+                const rect = entry.boundingClientRect;
+
+                // Check if the center of the screen is within the box
+                const isCenterWithinBox = (
+                    centerX >= rect.left &&
+                    centerX <= rect.right &&
+                    centerY >= rect.top &&
+                    centerY <= rect.bottom
+                );
+
+                // If the center is within the box, add the 'in-view' class
+                if (entry.isIntersecting && isCenterWithinBox) {
+                    entry.target.classList.add("in-view");
                 }
             });
         }, {
