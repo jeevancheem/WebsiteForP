@@ -8,8 +8,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.203);
     overflow-x: hidden;
 }
 
@@ -759,8 +759,10 @@ body {
       text-align: center;
       padding: var(--sectionPadding);
       background-color: white;
-      padding-top: 20%;
-      padding-bottom: 20%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      padding-top: 5%;
+      padding-bottom: 5%;
   }
   #why-choose-289 .cs-container {
       width: 100%;
@@ -868,6 +870,11 @@ body {
       margin: 0;
       color: white;
       transition: color 0.3s;
+  }
+  #why-choose-289 .cs-item.in-view {
+    background-color: white; /* Change to this color */
+    color: black; /* Change text color */
+    cursor: pointer; /* Indicate it's interactive */
   }
 }
 /* Tablet - 768px */

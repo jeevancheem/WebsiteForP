@@ -108,3 +108,40 @@ toggle.addEventListener('touchend', () => {
     setTimeout(revertColors, revertTimeout); // Delay reverting colors
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Define the screen size limit for when the scroll effect should apply (adjust the width if needed)
+    const isSmallScreen = window.matchMedia("(max-width: 768px)").matches; // Change 768px if needed
+
+    // Only activate the Intersection Observer if it's a small screen
+    if (isSmallScreen) {
+        // Select all the boxes (cs-items)
+        const boxes = document.querySelectorAll("#why-choose-289 .cs-item");
+
+        // Create an Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            // Remove 'in-view' class from all boxes first
+            boxes.forEach(box => box.classList.remove("in-view"));
+
+            entries.forEach(entry => {
+                // Check if the box is intersecting with the center of the screen
+                if (entry.isIntersecting) {
+                    // Only add 'in-view' class if the center of the viewport is touching the box
+                    const rect = entry.boundingClientRect; // Get the box's position
+
+                    // Check if the center of the screen is within the box's bounds
+                    const screenCenter = window.innerHeight / 2; // Calculate the center of the viewport
+                    if (rect.top < screenCenter && rect.bottom > screenCenter) {
+                        entry.target.classList.add("in-view");
+                    }
+                }
+            });
+        }, {
+            root: null, // Use the viewport as the root
+            rootMargin: '0px', // No additional margins
+            threshold: 0 // Trigger on any intersection
+        });
+
+        // Observe each box for intersection
+        boxes.forEach(box => observer.observe(box));
+    }
+});
