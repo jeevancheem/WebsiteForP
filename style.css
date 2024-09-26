@@ -909,6 +909,15 @@ body {
   }
 }
 
+@media(max-width: 768px) {
+
+  #why-choose-289 .cs-item {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
+
 /*-- -------------------------- -->
 <---          Footer            -->
 <--- -------------------------- -*/
