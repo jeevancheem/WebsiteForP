@@ -7,6 +7,9 @@
     <title>Name Here</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="applistyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/css/intlTelInput.css">
+
 </head>
 <body>
     <!-- ============================================ -->
@@ -70,6 +73,103 @@
     </div>
     </header>
 
+    <section style="color: white; background-color: black; width: 100%; padding-top: 30%; text-align: center; padding-bottom: 10%;" data-aos="zoom-out" data-aos-easing="ease-in-back" data-aos-duration="700">
+        
+        <h1>Application</h1>
+
+
+    </section>
+
+    <!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->          
+    <section id="contact-1388">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get in Touch</h2>
+            <p class="cs-text">TEXT</p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Phone</span>
+                        <a href="tel:888-4565-789
+                        " class="cs-link">+1 (233) 4565 789
+                        </a>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Email</span>
+                        <a href="mailto:Email@stitch.com" class="cs-link">EMAIL</a>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">LOCATION</span>
+                        <a href="" class="cs-link">WEST PALM BEACH, FLORIDA</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--Form-->
+        <form class="cs-form" id="cs-form-1388" name="Contact Form" method="post">
+            <h3 class="cs-h3">Application</h3>
+            <label class="cs-label">
+                First Name
+                <input class="cs-input" required type="text" id="name-1388" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label">
+                Surname
+                <input class="cs-input" required type="text" id="name-1388" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label cs-email">
+                Email
+                <input class="cs-input" required type="email" id="email-1388" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label cs-phone">
+                Phone
+                <input class="cs-input" type="tel" id="phone-1388" name="phone" required>
+            </label>
+            <div>
+
+                <h3>Document Upload</h3>
+                <h4>Must Contain:</h4>
+                <ul>
+                    <li>Copy of Visa</li>
+                    <li>Malpractice insurance (purchase separately)</li>
+                    <li>BLS</li>
+                    <li>ACLS</li>
+                    <li>Infection Control certificate</li>
+                    <li>Immunization – Flu within 1 year of start date</li>
+                    <li>Covid-19 immunization</li>
+                    <li>MMR / Varicella / Hep B titer or proof of vaccine</li>
+                    <li>Physical Exam within 1 year of start date</li>
+                    <li>Compliance form (provided by hospital)</li>
+                    <li>HIPAA (provided by hospital)</li>
+                    <li>PPD/CXR or Quantiferon within 1 year of start date</li>
+                </ul>
+                
+
+            </div>
+            <label class="cs-label">
+                Upload .pdf file
+                <input name="userfile" type="file" accept="application/pdf, application/vnd.ms-excel" />
+            </label>
+            <button class="cs-button-solid" type="submit">submit</button>
+        </form>
+    </div>
+    </section>
+
 
     <!-- ============================================ -->
 <!--                   Footer                     -->
@@ -105,6 +205,17 @@
 
     <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <script>AOS.init();</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#phone-1388");
+        window.intlTelInput(input, {
+          utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/utils.js",
+        });
+      </script>
 </body>
 </html>
