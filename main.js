@@ -55,29 +55,7 @@ const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropd
     }
     item.addEventListener('click', onClick)
     }
-                            
 
-// const toggle = document.getElementById('toggle');
-// const lines = document.querySelectorAll('.cs-line'); // Select all elements with the class 'cs-line'
-    
-// toggle.addEventListener('mouseover', () => {
-//     toggle.style.backgroundColor = '#FFFFFF'; // Change background color of the button
-    
-//     // Change the background color of each line
-//     lines.forEach(line => {
-//         line.style.backgroundColor = '#000000'; // Change color of each line
-//     });
-// });
-    
-// toggle.addEventListener('mouseout', () => {
-//     toggle.style.backgroundColor = ''; // Revert to original button color
-    
-//     // Revert the background color of each line
-//     lines.forEach(line => {
-//         line.style.backgroundColor = ''; // Revert to original line color
-//     });
-// });
-    
 const toggle = document.getElementById('toggle');
 const lines = document.querySelectorAll('.cs-line'); // Select all elements with the class 'cs-line'
 
@@ -86,6 +64,7 @@ const changeColors = () => {
     toggle.style.backgroundColor = '#FFFFFF'; // Change button background color
     lines.forEach(line => {
         line.style.backgroundColor = '#000000'; // Change line colors
+        
     });
 };
 
