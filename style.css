@@ -906,12 +906,13 @@ body {
       position: relative;
       box-sizing: border-box;
       display: flex;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
       flex-wrap: nowrap;
       column-gap: 5%;
       row-gap: 20%;
       color: white;
+      padding-left: 5%;
   }
   #cs-footer-1292 .cs-logo {
       width: 12.3125rem;
