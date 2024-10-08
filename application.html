@@ -18,17 +18,7 @@
             <stop id="stop3" offset="60%" style="stop-color:#8134AF;" />
             <stop id="stop4" offset="100%" style="stop-color:#515BD4;" />
           </linearGradient>
-        </defs>
-
-    <!-- <style>
-
-        :host ::ng-deep .iti {
-            z-index: 100;
-        }
-
-    </style> -->
-
-
+        </defs>   
 
 </head>
 <body>
@@ -151,19 +141,19 @@
             <h3 class="cs-h3">Application Form</h3>
             <label class="cs-label">
                 First Name *
-                <input class="cs-input" required type="text" id="name-1388" name="name" placeholder="Name">
+                <input class="cs-input" required type="text" id="name-1388" name="First Name" placeholder="First Name">
             </label>
             <label class="cs-label">
                 Surname *
-                <input class="cs-input" required type="text" id="name-1388" name="name" placeholder="Name">
+                <input class="cs-input" required type="text" id="name-1388" name="Surname" placeholder="Surname">
             </label>
             <label class="cs-label cs-email">
                 Email *
-                <input class="cs-input" required type="email" id="email-1388" name="email" placeholder="Email">
+                <input class="cs-input" required type="email" id="email-1388" name="Email" placeholder="Email">
             </label>
             <label class="cs-label cs-phone">
                 Phone *
-                <input class="cs-input" type="tel" id="phone-1388" name="phone" required>
+                <input class="cs-input" type="tel" id="phone-1388" name="Phone" required>
             </label>
             <input type="hidden" name="_redirect" value="thankyou.html">
             <div>
@@ -184,12 +174,18 @@
                     <li>HIPAA (provided by hospital)</li>
                     <li>PPD/CXR or Quantiferon within 1 year of start date</li>
                 </ul>
+                <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
                 
 
             </div>
             <label class="cs-label">
                 Upload .pdf file *
-                <input name="userfile" type="file" accept="application/pdf, application/vnd.ms-excel" required/>
+                <input
+                type="hidden"
+                id="pdf"
+                name="Docs"
+                role="uploadcare-uploader"
+                data-public-key="4d46edb71262f61e570e"/>
             </label>
             <button class="cs-button-solid" type="submit">submit</button>
         </form>
@@ -254,11 +250,13 @@
             utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/utils.js",
             separateDialCode: true,
             strictMode: true,
+            useFullscreenPopup: false,
             geoIpLookup: callback => {
                 fetch("https://ipapi.co/json")
                 .then(res => res.json())
                 .then(data => callback(data.country_code))
                 .catch(() => callback("us"));
+
         },
         });
         document.querySelector("#cs-form-1388").addEventListener("submit", function(event) {
@@ -273,7 +271,7 @@
         // Create a hidden input to hold the full number
         const hiddenInput = document.createElement("input");
         hiddenInput.setAttribute("type", "hidden");
-        hiddenInput.setAttribute("name", "phone"); // Ensure this matches your server's expected parameter name
+        hiddenInput.setAttribute("name", "Phone"); // Ensure this matches your server's expected parameter name
         hiddenInput.setAttribute("value", fullNumber);
     
         // Append the hidden input to the form
