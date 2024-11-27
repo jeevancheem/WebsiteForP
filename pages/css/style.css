@@ -338,6 +338,7 @@ body {
       background-color: white;
       overflow-y: scroll;
       height: 500%;
+      box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.105);
     }
 
     #cs-navigation .cs-dropdown.cs-active .cs-drop-ul {
@@ -550,7 +551,7 @@ body {
       gap: 4rem;
   }
   #why-choose-289 .cs-flex {
-      width: 50%;
+      width: 100%;
   }
   #why-choose-289 .cs-title {
       margin: 0;
@@ -562,9 +563,12 @@ body {
       flex-direction: row;
       /* 16px - 20px */
       gap: clamp(1rem, 1.5vw, 1.25rem);
-  }
+      padding-right: 80rem;
+  } 
   #why-choose-289 .cs-item {
-      width: auto;
+      width: 25rem;
+      height: 15rem;
+      text-wrap: wrap;
       /* 16px - 32px */
       padding: 2rem clamp(1rem, 2.1vw, 2rem);
   }
