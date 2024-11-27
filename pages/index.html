@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Florida USCE</title>
     <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/61fa9b2e78806a067e030307/2b883e2e-395c-4ae7-a589-7eb7c6fcba36/favicon.ico?format=100w" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
      rel="stylesheet"
@@ -23,7 +23,7 @@
         <!--Nav Logo-->
         <!--Logo is turned white in the css with a filter on dark mode-->
         <a href="index.html" class="cs-logo" aria-label="back to home">
-            <img src="FLORIDAUSCEATWALCLINIC.png" style="border-radius: 0%; border: solid; border-color: rgb(80, 80, 247); border-width: 5px;">
+            <img src="assets\images\FLORIDAUSCEATWALCLINIC.png" style="border-radius: 0%; border: solid; border-color: rgb(80, 80, 247); border-width: 5px;">
         </a>
         <!-- Navigation List -->
         <nav class="cs-nav" role="navigation">
@@ -46,6 +46,36 @@
                     <li class="cs-li">
                         <a href="application.html" class="cs-li-link" style="font-size: 40px;">
                             Apply
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="aboutus.html" class="cs-li-link" style="font-size: 40px;">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="contactQuestions.html" class="cs-li-link" style="font-size: 40px;">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="packages.html" class="cs-li-link" style="font-size: 40px;">
+                            Packages & Pricing
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="ourprocess.html" class="cs-li-link" style="font-size: 40px;">
+                            Our Process
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="terms.html" class="cs-li-link" style="font-size: 40px;">
+                            Terms & Conditions
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="faqs.html" class="cs-li-link" style="font-size: 40px;">
+                            FAQs
                         </a>
                     </li>
                     <li class="cs-li">
@@ -87,22 +117,26 @@
 
     <section id="hero-1785">
     <div class="cs-container">
-        <div class="cs-content" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="700">
+        <div class="cs-content" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-duration="500">
             <h1 class="cs-title">FLORIDA USCE</h1>
+            <h4 class="chrome">ELITE CLINICAL ROTATIONS<br>IN FLORDA</h4>
             <p class="cs-text" style="font-style: italic; font-family: sans-serif;">
                 Atwal Clinic
             </p>
             <div class="cs-button-group">
                 <a href="application.html" class="cs-button-solid cs-button1">Apply Now</a>
             </div>
+            <div class="cs-button-group" style="margin-top: 1%;">
+                <a href="aboutus.html" class="cs-button-solid cs-button1">Learn More</a>
+            </div>
         </div>
     </div>
 
     <!-- Background Image -->
     <picture class="cs-background">
-        <source media="(max-width: 600px)" src="main.jpg">
-        <source media="(min-width: 601px)" src="main.png">
-        <img loading="lazy" decoding="async" src="main.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
+        <source media="(max-width: 600px)" src="assets\images\main.jpg">
+        <source media="(min-width: 601px)" src="assets\images\main.png">
+        <img loading="lazy" decoding="async" src="assets\images\main.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
     </picture>
     </section>
                                 
@@ -112,7 +146,7 @@
 
     <section id="why-choose-289">
     <div class="cs-container">
-        <div class="cs-content" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="700">
+        <div class="cs-content" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="500">
             <div class="cs-flex">
                 <span class="cs-topper"></span>
                 <h1 class="cs-title" style="font-size: 50px">Why Choose Us?</h1>
@@ -122,7 +156,7 @@
             </p>
         </div>
         <ul class="cs-card-group">
-            <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="700">
+            <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="500">
             <li class="cs-item">
                 <!-- <img src="money-dollar-circle.svg" class="logo-icon" aria-hidden="true" loading="lazy" decoding="async" alt="icon" width="48" height="48"> -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 56 56"><path fill="#FFFFFF" d="M28 4c13.255 0 24 10.745 24 24S41.255 52 28 52S4 41.255 4 28S14.745 4 28 4m0 4C16.954 8 8 16.954 8 28s8.954 20 20 20s20-8.954 20-20S39.046 8 28 8m.573 6.286v2.687c3.976.319 6.855 2.704 6.982 6.314h-3.308c-.207-2.004-1.638-3.165-3.674-3.419V26.5l.764.19c4.183.971 6.473 2.689 6.473 6.076c0 3.897-3.181 6.107-7.237 6.394v2.671h-1.797V39.16c-4.04-.303-7.236-2.577-7.347-6.394h3.292c.286 1.861 1.495 3.229 4.055 3.5V29.33l-.652-.16c-4.04-.937-6.218-2.75-6.218-5.979c0-3.563 2.862-5.916 6.87-6.219v-2.687zm0 15.458v6.537c2.72-.207 3.865-1.495 3.865-3.197c0-1.638-.89-2.608-3.865-3.34m-1.797-9.876c-2.29.286-3.499 1.606-3.499 3.054c0 1.447.955 2.512 3.5 3.149z"/></svg>
@@ -132,8 +166,8 @@
                 </p>
             </li>
             </div>
-            <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="700">
-            <li class="cs-item" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="700">
+            <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="500">
+            <li class="cs-item" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="500">
                 <!-- <img class="logo-icon" aria-hidden="true" loading="lazy" decoding="async" src="" alt="icon" width="48" height="48"> -->
                 <svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M14,2H10A3,3,0,0,0,7,5V6H5A3,3,0,0,0,2,9V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V9a3,3,0,0,0-3-3H17V5A3,3,0,0,0,14,2ZM9,5a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1V6H9ZM20,9V19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V9A1,1,0,0,1,5,8H19A1,1,0,0,1,20,9Zm-7,4h2v2H13v2H11V15H9V13h2V11h2Z"/></svg>
                 <h3 class="cs-h3">Comprehensive Training</h3>
@@ -142,8 +176,8 @@
                 </p>
             </li>
             </div>
-            <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="700">
-            <li class="cs-item" data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-duration="700">
+            <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="500">
+            <li class="cs-item" data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-duration="500">
                 <!-- <img class="logo-icon" aria-hidden="true" loading="lazy" decoding="async" src="" alt="icon" width="48" height="48"> -->
                 <svg fill="#FFFFFF" height="48" width="48" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                 viewBox="0 0 512 512" xml:space="preserve">
@@ -175,15 +209,111 @@
     </section>
 
     <!-- ============================================ -->
+<!--                   Testimonials                   -->
+<!-- ============================================ -->
+
+
+
+    <section class="testimon" style="background-image: url(assets/images/testimonial.jpg); height: 100%; background-position: center; background-size: cover;" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="400">
+
+        <h1>But don't take it from us!</h1>
+        <h2>Hear what our students have to say</h2>
+
+        <ul id="myList">
+            <script>
+                // Array of tuples with student name and comment
+                const students = [
+    [
+        "Dr. Isabel Stukov", 
+        '"My understanding of Genomic and Personalized Medicine has grown immensely thanks to the support of the entire team, especially Dr. Atwal. I wholeheartedly recommend this organization as an excellent place for rotations to gain invaluable knowledge and experience."',
+        "Hematology-Oncology Tele-Medicine Rotation"
+    ],
+    [
+        "Dr. Amara Singh", 
+        '"I highly recommend this rotation to any medical student seeking hands-on clinical experience in the US. The staff at the clinic collaborate seamlessly and treat each other with great respect."',
+        "Clinical Rotation"
+    ],
+    [
+        "Dr. Chen Liang", 
+        '"The attending physician was deeply knowledgeable and passionate about teaching, providing tailored advice to enhance clinical skills. We had extensive opportunities to take patient histories, conduct physical exams, and present cases effectively to the attending."',
+        "Cardiology Clinical Rotation"
+    ],
+    [
+        "Dr. Sophia Patel", 
+        '"An exceptional learning experience! The rotation provided an ideal balance of hands-on patient interaction and insightful mentorship, helping me refine my clinical acumen and gain confidence."',
+        "Clinical Rotation"
+    ],
+    [
+        "Dr. Liam Morales", 
+        '"The rotation offered an outstanding environment to develop practical medical skills while fostering a collaborative and supportive atmosphere among staff and students alike."',
+        "Cardiology Clinical Rotation"
+    ]
+];
+
+        
+                // SVG star as a string
+                const starSVG = `
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                `;
+        
+                // Reference to the <ul> element
+                const list = document.getElementById("myList");
+        
+                // Loop through each tuple in the array
+                students.forEach(([name, comment, descprit]) => {
+                    // Create a new list item (li) element
+                    const listItem = document.createElement("li");
+    
+                    // Create h3 element for the student name
+                    const nameElement = document.createElement("h3");
+                    nameElement.textContent = name;
+
+                    // Create h3 element for the student name
+                    const descriptionElement = document.createElement("h5");
+                    descriptionElement.textContent = descprit;
+        
+                    // Create p element for the student comment
+                    const commentElement = document.createElement("p");
+                    commentElement.textContent = comment;
+        
+                    // Create a container for the stars and populate it with 5 stars
+                    const starsContainer = document.createElement("div");
+                    starsContainer.classList.add("stars");
+                    for (let i = 0; i < 5; i++) {
+                        starsContainer.innerHTML += starSVG;
+                    }
+        
+                    
+        
+                    // Append the stars container, h3, and p elements to the li
+                    listItem.appendChild(nameElement);
+                    listItem.appendChild(descriptionElement);
+                    listItem.appendChild(commentElement);
+                    listItem.appendChild(starsContainer);
+        
+                    // Append the li to the ul
+                    list.appendChild(listItem);
+                });
+            </script>
+        </ul>
+    
+    
+    
+    </section>
+    
+
+    <!-- ============================================ -->
 <!--                   Footer                     -->
 <!-- ============================================ -->
 
-<footer id="cs-footer-1292" data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-duration="700">
+<footer id="cs-footer-1292" data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-duration="500">
     <div class="cs-container">      
         <!-- Logo Group -->
         <div class="cs-logo-group">
             <a aria-label="go back to home" class="cs-logo" href="">
-                <img src="FLORIDAUSCEATWALCLINIC.png" style="border-radius: 0%; border: solid;  border-color: rgb(80, 80, 247); border-width: 5px;" height="60"><br><br>
+                <img src="assets/images/FLORIDAUSCEATWALCLINIC.png" style="border-radius: 0%; border: solid;  border-color: rgb(80, 80, 247); border-width: 5px;" height="60"><br><br>
             </a>
         </div>
         <div class="cs-logo-group">
@@ -220,7 +350,7 @@
     </footer>
                                 
 
-    <script src="main.js"></script>
+    <script src="javascript/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
 </body>

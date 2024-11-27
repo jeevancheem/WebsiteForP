@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Florida USCE</title>
     <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/61fa9b2e78806a067e030307/2b883e2e-395c-4ae7-a589-7eb7c6fcba36/favicon.ico?format=100w" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="applistyle.css">
+    <link rel="stylesheet" href="css/applistyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/css/intlTelInput.css">
 
     <defs>
@@ -33,7 +33,7 @@
         <!--Nav Logo-->
         <!--Logo is turned white in the css with a filter on dark mode-->
         <a href="index.html" class="cs-logo" aria-label="back to home">
-            <img src="FLORIDAUSCEATWALCLINIC.png" style="border-radius: 0%; border: solid; border-color: rgb(80, 80, 247); border-width: 5px;">
+            <img src="assets\images\FLORIDAUSCEATWALCLINIC.png" style="border-radius: 0%; border: solid; border-color: rgb(80, 80, 247); border-width: 5px;">
         </a>
         <!-- Navigation List -->
         <nav class="cs-nav" role="navigation">
@@ -56,6 +56,36 @@
                     <li class="cs-li">
                         <a href="application.html" class="cs-li-link" style="font-size: 40px;">
                             Apply
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="aboutus.html" class="cs-li-link cs-active" style="font-size: 40px;">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="contactQuestions.html" class="cs-li-link" style="font-size: 40px;">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="packages.html" class="cs-li-link" style="font-size: 40px;">
+                            Packages & Pricing
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="ourprocess.html" class="cs-li-link" style="font-size: 40px;">
+                            Our Process
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="terms.html" class="cs-li-link" style="font-size: 40px;">
+                            Terms & Conditions
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="faqs.html" class="cs-li-link" style="font-size: 40px;">
+                            FAQs
                         </a>
                     </li>
                     <li class="cs-li">
@@ -92,18 +122,45 @@
 
     <section style="color: white; background-color: black; width: 100%; padding-top: 30%; text-align: center; padding-bottom: 10%;" data-aos="zoom-out" data-aos-easing="ease-in-back" data-aos-duration="700">
         
-        <h1>Thank you</h1>
+        <h1>Meet the Founder</h1>
 
 
     </section>
 
-    <section style="color: black; background-color: inherit; width: 100%; padding-top: 10%; text-align: center; padding-bottom: 10%;" data-aos="zoom-out" data-aos-easing="ease-in-back" data-aos-duration="700">
-        
-        <h3>Thank you for your application!</h3>
-        <h4><br>We will be in contact soon.</h4>
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-
-    </section>
+<section id="hero">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">MEDICAL DIRECTOR, PHYSICAN</span>
+            <h1 class="cs-title">Paldeep S. Atwal, MD, FACMG, FRCP(UK), FRCP(Glasg)</h1>
+            <p class="cs-text">
+                Dr. Atwal is a board-certified expert in clinical and medical biochemical genetics. He has held prominent roles, including Medical Director of the Center for Individualized Medicine Clinic and Clinical Lead for the Department of Clinical Genomics at Mayo Clinic’s Jacksonville campus. Dr. Atwal is a distinguished fellow of the American College of Medical Genetics & Genomics and the Royal Colleges of Physicians of the United Kingdom.
+                <br><br>
+                Dr. Atwal specializes in clinical genomics, solving undiagnosed cases after prolonged diagnostic challenges, and managing inborn errors of metabolism, including mitochondrial disorders. His notable achievements include discovering two novel genetic connective tissue syndromes caused by defects in the FLNA and AEBP1 genes and developing an innovative untargeted metabolomic screening test for inborn errors of metabolism. With over 100 publications and several book chapters, Dr. Atwal has made significant contributions to the field of human genetics.
+            </p>
+            <a href="" class="cs-button-solid">Schedule An Appointment</a>
+        </div>
+        <!--Hero Image-->
+        <picture class="cs-picture">
+            <!--Mobile-->
+            <source media="(max-width: 600px)" src="assets/images/paldeep.jpg">
+            <!--Tablet-->
+            <source media="(min-width: 601px)" src="assets/images/paldeep.jpg">
+            <!--Desktop-->
+            <source media="(min-width: 1024px)" src="assets/images/paldeep.jpg">
+            <img aria-hidden="true" decoding="async" src="assets/images/paldeep.jpg">
+            </picture>
+    </div>
+    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
+    </svg>
+</section>
+                                
+                                
       
     <!-- ============================================ -->
 <!--                   Footer                     -->
@@ -114,7 +171,7 @@
         <!-- Logo Group -->
         <div class="cs-logo-group">
             <a aria-label="go back to home" class="cs-logo" href="">
-                <img src="FLORIDAUSCEATWALCLINIC.png" style="border-radius: 0%; border: solid;  border-color: rgb(80, 80, 247); border-width: 5px;" height="60"><br><br>
+                <img src="assets\images\FLORIDAUSCEATWALCLINIC.png" style="border-radius: 0%; border: solid;  border-color: rgb(80, 80, 247); border-width: 5px;" height="60"><br><br>
             </a>
         </div>
         <div class="cs-logo-group">
@@ -145,7 +202,7 @@
     <div class="cs-floater" aria-hidden="true"></div>
     </footer>
                                 
-    <script src="main.js"></script>
+    <script src="javascript/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 

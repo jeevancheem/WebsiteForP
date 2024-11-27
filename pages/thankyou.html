@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Florida USCE</title>
+    <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/61fa9b2e78806a067e030307/2b883e2e-395c-4ae7-a589-7eb7c6fcba36/favicon.ico?format=100w" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/applistyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/css/intlTelInput.css">
+
+    <defs>
+        <linearGradient id="insta-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop id="stop1" offset="0%" style="stop-color:#F58529;" />
+            <stop id="stop2" offset="30%" style="stop-color:#DD2A7B;" />
+            <stop id="stop3" offset="60%" style="stop-color:#8134AF;" />
+            <stop id="stop4" offset="100%" style="stop-color:#515BD4;" />
+          </linearGradient>
+        </defs>
+
+
+
+</head>
+<body>
+    <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+    <header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="index.html" class="cs-logo" aria-label="back to home">
+            <img src="assets\images\FLORIDAUSCEATWALCLINIC.png" style="border-radius: 0%; border: solid; border-color: rgb(80, 80, 247); border-width: 5px;">
+        </a>
+        <!-- Navigation List -->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button id="toggle" class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-li-link cs-active" style="font-size: 40px;">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="application.html" class="cs-li-link" style="font-size: 40px;">
+                            Apply
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="aboutus.html" class="cs-li-link" style="font-size: 40px;">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="contactQuestions.html" class="cs-li-link" style="font-size: 40px;">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="packages.html" class="cs-li-link" style="font-size: 40px;">
+                            Packages & Pricing
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="ourprocess.html" class="cs-li-link" style="font-size: 40px;">
+                            Our Process
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="terms.html" class="cs-li-link" style="font-size: 40px;">
+                            Terms & Conditions
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="faqs.html" class="cs-li-link" style="font-size: 40px;">
+                            FAQs
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="https://atwalclinic.com/" class="cs-li-link" style="font-size: 40px;">
+                            Atwal Clinic
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <div class="cs-social">
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+    </header>
+
+    <section style="color: white; background-color: black; width: 100%; padding-top: 30%; text-align: center; padding-bottom: 10%;" data-aos="zoom-out" data-aos-easing="ease-in-back" data-aos-duration="700">
+        
+        <h1>Thank you</h1>
+
+
+    </section>
+
+    <section style="color: black; background-color: inherit; width: 100%; padding-top: 10%; text-align: center; padding-bottom: 10%;" data-aos="zoom-out" data-aos-easing="ease-in-back" data-aos-duration="700">
+        
+        <h3>Thank you for your application!</h3>
+        <h4><br>We will be in contact soon.</h4>
+
+
+    </section>
+      
+    <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-1292" data-aos="fade-down" data-aos-easing="ease-in-back" data-aos-duration="700">
+    <div class="cs-container">      
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img src="assets\images\FLORIDAUSCEATWALCLINIC.png" style="border-radius: 0%; border: solid;  border-color: rgb(80, 80, 247); border-width: 5px;" height="60"><br><br>
+            </a>
+        </div>
+        <div class="cs-logo-group">
+            
+            <a id="linkedin" href="https://www.linkedin.com/in/paldeepatwal"><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a id="insta" href="https://www.instagram.com/atwalclinic/">
+                <div>
+                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </div>
+            </a>
+            <a id="x" href="https://x.com/AtwalClinic"><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z"/></svg></a>
+            <a id="fb" href="https://www.facebook.com/AtwalClinic/"><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></a>
+            <a id="mail" href="info@atwalclinic.com" class="cs-link">info@atwalclinic.com</a>
+
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright">Copyright© 2024. 
+            <a class="cs-copyright-link" href="">Atwal Clinic.</a>
+            All Right Reserved.
+        </span>
+        <a href="" class="cs-copyright-link">Terms of Service</a>
+        <a href="" class="cs-copyright-link">Privacy Policy</a>
+    </div>
+    <!--Floating Cirlces-->
+    <div class="cs-floater" aria-hidden="true"></div>
+    </footer>
+                                
+    <script src="javascript/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>AOS.init();</script>
+
+</body>
+</html>
